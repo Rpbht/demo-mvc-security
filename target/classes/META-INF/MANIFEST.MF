@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: demo-mvc-security
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: rahul.panchal
+Implementation-Vendor-Id: com.cignex.rahul
+Build-Jdk: 1.8.0_92
+Implementation-URL: https://projects.spring.io/spring-boot/spring-boot
+ -starter-parent/demo-mvc-security/
+Created-By: Maven Integration for Eclipse
+
