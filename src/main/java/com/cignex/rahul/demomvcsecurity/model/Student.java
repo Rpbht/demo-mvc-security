@@ -24,17 +24,28 @@ public class Student {
 	@NotEmpty
 	private String lName;
 	
+	@NotNull
+	@NotEmpty
+	private String password;
+	
 	public Student() {
 		super();
 	}
 
-	public Student(long id, @NotNull @NotEmpty String fName, @NotNull @NotEmpty String lName) {
+	public Student(long id, @NotNull @NotEmpty String fName, @NotNull @NotEmpty String lName,@NotNull @NotEmpty String password) {
 		super();
 		this.id = id;
 		this.fName = fName;
 		this.lName = lName;
+		this.password=password;
 	}
 
+	public Student(@NotNull @NotEmpty String fName,@NotNull @NotEmpty String password) {
+
+		this.fName = fName;
+		this.password=password;
+	}
+	
 	public long getId() {
 		return id;
 	}
@@ -59,8 +70,17 @@ public class Student {
 		this.lName = lName;
 	}
 
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", fName=" + fName + ", lName=" + lName + "]";
+		return "Student [id=" + id + ", fName=" + fName + ", lName=" + lName + ", password=" + password + "]";
 	}
+	
 }

@@ -8,11 +8,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 </head>
 <body>
-
-<form action="/AddStudent" method="get" enctype="utf8">
-
-
-</form>
-
+<h2>From HomePage</h2>
 </body>
 </html>
